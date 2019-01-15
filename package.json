@@ -4,6 +4,7 @@
   "description": "Use fontmin to minify font files.",
   "main": "index.js",
   "scripts": {
+    "commit": "gitmoji -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +21,8 @@
     "fontmin": "^0.9.7-beta",
     "minimatch": "^3.0.4",
     "stream-to-array": "^2.3.0"
+  },
+  "devDependencies": {
+    "gitmoji-cli": "^1.9.2"
   }
 }
