@@ -13,7 +13,7 @@ function compressTTF () {
   hexo.log.info('[fontmin] %d fonts found.', routes.length)
 
   return Promise.map(routes, function (route) {
-    streamToArrayAsync(hexo.route.get(route))
+    return streamToArrayAsync(hexo.route.get(route))
       .then(function (arr) {
         return Buffer.concat(arr)
       })
